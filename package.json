@@ -1,0 +1,19 @@
+{
+  "name": "wayfarer2-api",
+  "version": "0.1.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "firebase": "^3.9.0",
+    "foreman": "^2.0.0",
+    "mongoose": "^4.9.8"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/janeosaur/wayfarer2-api"
+  }
+}
