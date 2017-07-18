@@ -16,3 +16,6 @@ set port
     app.listen(process.env.PORT || 3001, function() {
       console.log('api running on port 3001');
     });
+    
+heroku run node seed.js
+
