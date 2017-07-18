@@ -1,3 +1,16 @@
-API/server for Wayfarer2:  
+Deployed link: https://wayfarer2-api.herokuapp.com/api
 
-Deployed link: https://wayfarer2-api.herokuapp.com
+Procfile, .gitignore
+
+@server.js
+
+heroku config env variables: https://devcenter.heroku.com/articles/mongolab
+
+    var databaseUrl = process.env.MONGODB_URI;
+    mongoose.createConnection(databaseUrl || 'mongodb://localhost/wayfarer2-api')
+
+set port
+    
+    app.listen(process.env.PORT || 3001, function() {
+      console.log('api running on port 3001');
+    });
