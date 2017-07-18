@@ -1,3 +1,4 @@
+var mongoose = require('mongoose')
 var databaseUrl = process.env.MONGODB_URI;
 mongoose.createConnection(databaseUrl || 'mongodb://localhost/wayfarer2-api')
 
