@@ -6,6 +6,8 @@ Procfile, .gitignore
 
 heroku config env variables: https://devcenter.heroku.com/articles/mongolab
 
+mongo url: https://mlab.com/databases
+
     var databaseUrl = process.env.MONGODB_URI;
     mongoose.createConnection(databaseUrl || 'mongodb://localhost/wayfarer2-api')
 
