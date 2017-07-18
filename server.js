@@ -12,8 +12,7 @@ var app = express(),
 
 //db config
 var databaseUrl = process.env.MONGODB_URI;
-mongoose.createConnection(databaseUrl || 'mongodb://localhost/wayfarer2-api')
-
+mongoose.connect(databaseUrl || 'mongodb://localhost/wayfarer2-api')
 mongoose.Promise = global.Promise;
 
 //config API to use bodyParser and look for JSON in req.body
